@@ -61,4 +61,12 @@ public class MainActivity extends AppCompatActivity {
         shakeAnim = AnimationUtils.loadAnimation(this, R.anim.shake_anim);
         lightsImageView.startAnimation(shakeAnim);
     }
+
+    //  Custom animation button (rotate and scale)
+    public void toggleCustomAnim(View v)
+    {
+        // Load animation from xml
+        customAnim = AnimationUtils.loadAnimation(this, R.anim.custom_anim);
+        lightsImageView.startAnimation(customAnim);
+    }
 }
